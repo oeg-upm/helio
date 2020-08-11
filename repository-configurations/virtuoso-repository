@@ -1,0 +1,2 @@
+// Example {"type": "VirtuosoRepository", "endpoint" : "jdbc:virtuoso://localhost:1111", "username" : "dba", "password" : "dba"} 
+{"type": "VirtuosoRepository", "endpoint" : "a valid virtuoso endpoint", "username" : "a valid and authorised username", "password" : "a valid password"} 
