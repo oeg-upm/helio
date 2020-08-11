@@ -1,0 +1,2 @@
+// Example: {"rdf4jServer" : "http://example.org/rdf4j-server/", "repositoryID" : "example-db"}
+{"rdf4jServer" : "fill here a valid sparql URL endpoint", "repositoryID" : "a valid id"}

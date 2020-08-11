@@ -1,0 +1,2 @@
+// Example: { "hostname" : "localhost", "port" : 9300, "clusterName" : "elasticsearch", "index" : "rdf4j_index" }
+{ "hostname" : "a valid hostname", "port" : "the port of the service", "clusterName" : "a valid cluster name", "index" : "a valid index" }
