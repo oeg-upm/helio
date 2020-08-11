@@ -1,2 +1,2 @@
-// Example: {"sparql_endpoint" : "http://example.org/sparql"}
-{"sparql_endpoint" : "fill here a valid sparql URL endpoint"}
+// Example: {"type" : "SPARQLRepository", "sparql_endpoint" : "http://example.org/sparql"}
+{"type" : "SPARQLRepository", "sparql_endpoint" : "fill here a valid sparql URL endpoint"}
