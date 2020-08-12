@@ -1,0 +1,1215 @@
+{
+
+    "resource_rules": [
+        {
+            "id" : "DryBulbTemperature",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DryBulbTemperatureMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DryBulbTemperatureMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DryBulbTemperatureMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DryBulbTemperature}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DewPointTemperature",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DewPointTemperatureMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DewPointTemperatureMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DewPointTemperatureMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DewPointTemperature}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "RelativeHumidity",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/RelativeHumidityMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "RelativeHumidityMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/RelativeHumidityMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.RelativeHumidity}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/percent",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "AtmosphericStationPressure",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AtmosphericStationPressureMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "AtmosphericStationPressureMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AtmosphericStationPressureMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.AtmosphericStationPressure}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ExtraterrestrialHorizontalRadiation",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestrialHorizontalRadiation",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ExtraterrestrialHorizontalRadiationMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ExtraterrestrialHorizontalRadiationMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ExtraterrestrialHorizontalRadiationMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.ExtraterrestrialHorizontalRadiation}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ExtraterrestrialDirectNormalRadiation",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestrialDirectNormalRadiation",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ExtraterrestrialDirectNormalRadiationMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ExtraterrestrialDirectNormalRadiationMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ExtraterrestrialDirectNormalRadiationMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.ExtraterrestrialDirectNormalRadiation}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "HorizontalInfraredRadiationIntensity",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/HorizontalInfraredRadiationIntensityMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "HorizontalInfraredRadiationIntensityMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/HorizontalInfraredRadiationIntensityMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.HorizontalInfraredRadiationIntensity}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "GlobalHorizontalRadiation",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalRadiation",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/GlobalHorizontalRadiationMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "GlobalHorizontalRadiationMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/GlobalHorizontalRadiationMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.GlobalHorizontalRadiation}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DirectNormalRadiation",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalRadiation",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DirectNormalRadiationMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DirectNormalRadiationMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DirectNormalRadiationMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DirectNormalRadiation}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DiffuseHorizontalRadiation",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalRadiation",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DiffuseHorizontalRadiationMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DiffuseHorizontalRadiationMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DiffuseHorizontalRadiationMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DiffuseHorizontalRadiation}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#wattHourPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "GlobalHorizontalIlluminance",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/GlobalHorizontalIlluminanceMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "GlobalHorizontalIlluminanceMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/GlobalHorizontalIlluminanceMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.GlobalHorizontalIlluminance}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DirectNormalIlluminance",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalIlluminance",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DirectNormalIlluminanceMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DirectNormalIlluminanceMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DirectNormalIlluminanceMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DirectNormalIlluminance}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DiffuseHorizontalIlluminance",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalIlluminance",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DiffuseHorizontalIlluminanceMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DiffuseHorizontalIlluminanceMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DiffuseHorizontalIlluminanceMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DiffuseHorizontalIlluminance}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ZenithLuminance",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ZenithLuminanceMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "ZenithLuminanceMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/ZenithLuminanceMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.ZenithLuminance}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "WindDirection",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#WindDirection",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/WindDirectionMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "WindDirectionMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/WindDirectionMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.WindDirection}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "WindSpeed",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#WindSpeed",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/WindSpeedMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "WindSpeedMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/WindSpeedMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.WindSpeed}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "TotalSkyCover",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/TotalSkyCoverMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "TotalSkyCoverMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/TotalSkyCoverMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.TotalSkyCover}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#tenthsOfCoverage",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "OpaqueSkyCover",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkyCover",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/OpaqueSkyCoverMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "OpaqueSkyCoverMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/OpaqueSkyCoverMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.OpaqueSkyCover}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#tenthsOfCoverage",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "Visibility",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#Visibility",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/VisibilityMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "VisibilityMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/VisibilityMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.Visibility}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "CeilingHeight",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#CeilingHeight",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/CeilingHeightMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "CeilingHeightMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/CeilingHeightMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.CeilingHeight}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "PrecipitableWater",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/PrecipitableWaterMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "PrecipitableWaterMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/PrecipitableWaterMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.PrecipitableWater}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "AerosolOpticalDepth",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#AerosolOpticalDepth",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AerosolOpticalDepthMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "AerosolOpticalDepthMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AerosolOpticalDepthMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.AerosolOpticalDepth}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "https://bimerr.iot.linkeddata.es/def/weather#thousandths",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "SnowDepth",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#SnowDepth",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/SnowDepthMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "SnowDepthMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/SnowDepthMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.SnowDepth}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DaysSinceLastSnowfall",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DaysSinceLastSnowfallMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "DaysSinceLastSnowfallMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/DaysSinceLastSnowfallMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.DaysSinceLastSnowfall}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/day",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "Albedo",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#Albedo",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AlbedoMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "AlbedoMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/AlbedoMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.Albedo}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "LiquidPrecipitationDepth",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationDepth",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/LiquidPrecipitationDepthMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "LiquidPrecipitationDepthMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/LiquidPrecipitationDepthMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.LiquidPrecipitationDepth}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "LiquidPrecipitationQuantity",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/relatesToMeasurement", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/LiquidPrecipitationQuantityMeasurement",
+                    "is_literal" : "False" 
+                }
+            ]
+        },
+        {
+            "id" : "LiquidPrecipitationQuantityMeasurement",
+            "datasource_ids" : ["EPW Values datasource"],
+            "subject" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.Year}-{$.Month}-{$.Day}-{$.Hour}/LiquidPrecipitationQuantityMeasurement",
+            "properties" : [
+                {
+                    "predicate" : "https://saref.etsi.org/core/measurementMadeBy", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.adm03}/{$.city}/{$.wmo}/Device",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasTimeStamp", 
+                    "object" : "{$.Year}-{$.Month}-{$.Day}-{$.Hour}",
+                    "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/hasValue", 
+                    "object" : "{$.LiquidPrecipitationQuantity}",
+                    "is_literal" : "True" 
+                },
+                {
+                    "predicate" : "https://saref.etsi.org/core/isMeasuredIn", 
+                    "object" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hour",
+                    "is_literal" : "False" 
+                },
+                {
+                    "predicate" : "https://bimerr.iot.linkeddata.es/def/weather#isDefinitionOf", 
+                    "object" : "https://bimerr.iot.linkeddata.es/resource/weather/{$.epwName}",
+                    "is_literal" : "False" 
+                }
+            ]
+        }
+    ]
+}
