@@ -1,9 +1,0 @@
-{
-    "datasources": [
-        {
-            "id": "EPW Values datasource",
-            "handler": { "type": "JsonHandler", "iterator" : "$.epw.[*]" },
-            "provider": { "type": "FileProvider", "file" : "./data/ESP_CE_Ceuta.603200_TMYx.json" }
-        }
-    ]
-}
