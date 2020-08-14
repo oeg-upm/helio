@@ -1,5 +1,5 @@
 # 1. Run the following command
-mvn install:install-file -Dfile=framework-0.2.9.jar -DgroupId=upm.oeg.helio -DartifactId=framework -Dversion=0.2.9 -Dpackaging=jar
+mvn install:install-file -Dfile=framework-0.3.0.jar -DgroupId=upm.oeg.helio -DartifactId=framework -Dversion=0.3.0 -Dpackaging=jar
 
 # 2. In the pom of your project import the follwing dependencies
 #
@@ -8,5 +8,5 @@ mvn install:install-file -Dfile=framework-0.2.9.jar -DgroupId=upm.oeg.helio -Dar
 #	<dependency>
 #		<groupId>upm.oeg.helio</groupId>
 #		<artifactId>framework</artifactId>
-#		<version>0.2.9</version>
+#		<version>0.3.0</version>
 #	</dependency>
