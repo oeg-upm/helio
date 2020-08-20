@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Helio
 
 You can use the [editor on GitHub](https://github.com/oeg-upm/Helio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
