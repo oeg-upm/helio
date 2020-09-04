@@ -1,1 +1,9 @@
 theme: jekyll-theme-cayman
+google_analytics: 143024889
+logo_url: ./logo.png
+colors:
+    gradient_down: "#4298e2"
+    header: "#1892FB"
+    android_theme: "#000" # this default to gradient_color
+    link: "#1e6bb8" # this default to gradient_color
+    section_title: "#155799" # this default to gradient_color
