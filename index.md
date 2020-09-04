@@ -1,38 +1,25 @@
-## Welcome to Helio
----
-image: ./android-chrome-512x512.png
----
-You can use the [editor on GitHub](https://github.com/oeg-upm/Helio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Helio, lift your data!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Helio is a framework that allows generating and publishing RDF data from different heterogeneous sources as Linked Data. 
 
-### Markdown
+## What Helio can do for me?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As user Helio can be used to generate synchronously or asynchronously Knowledge Graphs from a set of heterogeneous sources:
+* Generating the RDF of the KG into a file
+* Link resources using linking rules
+* Use different mapping languages to generate RDF and links among its resources
+* Use an external triple store as Helio database
+* Publish the RDF as a Linked Data Service (prividing access to resources, a SPARQL endpoint, and the whole dataset)
+* Customise the HTML views of the Linked Data Service
+* Create views dynamically combining data of different RDF resources
+* Provide an integrated view of different distributed Helios or SPARQL endpoints
 
-```markdown
-Syntax highlighted code block
+As a developer Helio can be used as a maven dependency for:
+* Generating RDF and links among resources
+* Develop plugins for new functionalities
 
-# Header 1
-## Header 2
-### Header 3
+## Where Helio has been used?
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/oeg-upm/Helio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
