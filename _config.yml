@@ -1,10 +1,7 @@
 theme: jekyll-theme-cayman
 google_analytics: UA-143024889-1
-
+google_analytics_anonymize: false
+darkmode: false
 github:
   repository_url: https://github.com/oeg-upm/helio/wiki
 
-plugins:
-- jekyll-readme-index
-- jekyll-sitemap
-- jekyll-avatar
