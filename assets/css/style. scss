@@ -4,3 +4,9 @@ $header-bg-color: #1892FB ;
 $header-bg-color-secondary: #1892FB ;
 
 @import "{{ site.theme }}";
+
+.main-content {
+  h1 {
+   color: #1892FB;
+ }
+}
