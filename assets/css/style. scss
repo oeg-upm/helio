@@ -6,7 +6,7 @@ $header-bg-color-secondary: #1892FB ;
 @import "{{ site.theme }}";
 
 .main-content {
-  h1 {
+  h2 {
    color: #1892FB;
  }
 }
