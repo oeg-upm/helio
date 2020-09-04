@@ -1,0 +1,7 @@
+---
+---
+.page-header {
+  background-color: #1892FB;
+}
+
+@import "{{ site.theme }}";
