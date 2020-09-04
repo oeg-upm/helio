@@ -3,7 +3,7 @@ $header-heading-color: #1892FB ;
 $header-bg-color: #1892FB ;
 $header-bg-color-secondary: #1892FB ;
 
-@import "{{ site.theme }}";
+@import 'jekyll-theme-cayman';
 
 .main-content {
   h2 {
