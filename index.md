@@ -2,9 +2,7 @@
 title: Helio
 ---
 
-## Lift your data!
-
-### Helio is a framework that allows generating and publishing RDF data from different heterogeneous sources as Linked Data. 
+### Helio is a framework that allows generating and publishing RDF data from different heterogeneous sources as Linked Data. 
 
 -------------
 
