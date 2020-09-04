@@ -1,9 +1,10 @@
 theme: jekyll-theme-cayman
 google_analytics: 143024889
 
+
+show_downloads: true
 github:
-  zip_url: http://example.com/download.zip
-  Documentation: https://github.com/oeg-upm/Helio/wiki
+  repository_url: https://github.com/oeg-upm/helio/wiki
 
 plugins:
 - jekyll-readme-index
