@@ -10,9 +10,9 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: {{ site.color.header | default: "#fff" }} !default;
-$header-bg-color: {{ site.color.gradient_right | default: "#159957" }} !default;
-$header-bg-color-secondary: {{ site.color.gradient_left | default: "#155799" }} !default;
+$header-heading-color: {{ site.color.header | default: "#1892FB" }} !default;
+$header-bg-color: {{ site.color.gradient_right | default: "#1892FB" }} !default;
+$header-bg-color-secondary: {{ site.color.gradient_left | default: "#1892FB" }} !default;
 
 // Text
 $section-headings-color: {{ site.color.section_title | default: site.color.gradient_right | default: "#159957" }} !default;
