@@ -1,6 +1,5 @@
 ---
 title: Helio
-layout: post
 ---
 
 ## Helio, lift your data!
