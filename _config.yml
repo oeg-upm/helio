@@ -4,4 +4,10 @@ google_analytics_anonymize: false
 darkmode: false
 github:
   repository_url: https://github.com/oeg-upm/helio/wiki
+colors:
+    gradient_left: "#1892FB"
+    gradient_right: "#1892FB"
+    header: "#1892FB"
+    android_theme: "#1892FB" # this default to gradient_color
+    section_title: "#1892FB" # this default to gradient_color
 
