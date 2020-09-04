@@ -2,9 +2,10 @@
 ---
 ---
 
+@import "{{ site.theme }}";
 
 $header-bg-color: #1892FB;
 $header-bg-color-secondary: #1892FB;
 
-
-@import "{{ site.theme }}";
+h1 {color:#1892FB;}
+header {background-color:#1892FB;}
