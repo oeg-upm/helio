@@ -6,9 +6,9 @@ title: Helio
 
 -------------
 
-## What Helio can do for me?
+## What Helio can do for you
 
-As user Helio can be used to generate synchronously or asynchronously Knowledge Graphs from a set of heterogeneous sources:
+For **users** Helio generates synchronously or asynchronously Knowledge Graphs from a set of heterogeneous sources:
 * Generating the RDF of the KG into a file
 * Link resources using linking rules
 * Use different mapping languages to generate RDF and links among its resources
@@ -18,22 +18,22 @@ As user Helio can be used to generate synchronously or asynchronously Knowledge 
 * Create views dynamically combining data of different RDF resources
 * Provide an integrated view of different distributed Helios or SPARQL endpoints
 
-As a developer Helio can be used as a maven dependency for:
+For **developers** Helio can be used as a maven dependency for:
 * Generating RDF and links among resources
-* Develop plugins for new functionalities
+* Developing plugins for new functionalities
 
 
 ## Successful stories with Helio
 
 * **Data Portals**
   - [Astrea](https://astrea.linkeddata.es/) with its [Helio service](https://astrea.helio.linkeddata.es/)
-  <br/>
-  
+<br/>
+
 * **Research projects**
   - [European project BIMER](2019-2022) 
   - [European project DELTA](2019-2021) 
-  - [European project VICINITY](2016-2019) 
-  <br/>
+  - [European project VICINITY](2016-2019)
+<br/>
 
 * **Research articles using Helio**
   - Cimmino, A., et al. Semantic Interoperability for DR Schemes Employing the SGAM Framework. 3rd International Conference on Smart Energy Systems and Technologies (SEST). 2020
@@ -41,18 +41,18 @@ As a developer Helio can be used as a maven dependency for:
   - Cimmino, A., Fernández-Izquierdo, A., & García-Castro, R. Astrea: Automatic Generation of SHACL Shapes from Ontologies. In European Semantic Web Conference (ESWC), Springer. 2020.
   - Cimmino, A., Poveda-Villalón, M., & García-Castro, R. eWoT: A Semantic Interoperability Approach for Heterogeneous IoT Ecosystems Based on the Web of Things. Sensors. 2020.
   - Cimmino, A., et al. Vicinity: Iot semantic interoperability based on the web of things. In 2019 15th International Conference on Distributed Computing in Sensor Systems (DCOSS), IEEE. 2019
-  <br/>
+<br/>
 
 * **Bachelor proposals using Helio**
   - Gómez-Vélez, Lorenzo. [Sensoring Work Spaces relying on the Web of Things paradigm](http://oa.upm.es/58136/), 2020. 
   - Cano-Benito, Juan. [Smart Semantic Office using blockchain technology](http://oa.upm.es/55994/), 2019. 
   - Naharros-Molinero, Almudena. [Analysis of factors involved in the rabies virus host hop](http://oa.upm.es/57068/). 2019. 
-  <br/>
+<br/>
 
 * **Tutorials**
   - 2020 [Knowledge Graph Construction using Declarative Mapping Rules](https://iswc2020.semanticweb.org/program/tutorials/) at International Semantic Web Conference. 
   - 2019 [Knowledge Graph Construction using Declarative Mapping Rules](https://2019.eswc-conferences.org/tutorials-workshops/) at Extended Semantic Web Conference. 
-  <br/>
+<br/>
   
 ### Support or Contact
 
