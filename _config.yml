@@ -4,6 +4,7 @@ google_analytics_anonymize: false
 darkmode: false
 github:
   repository_url: https://github.com/oeg-upm/helio/wiki
+  build_revision: /assets/css/style.scss
 colors:
     gradient_left: "#1892FB"
     gradient_right: "#1892FB"
