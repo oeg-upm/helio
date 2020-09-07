@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Base imports -->
+    <link href="/css/favicons/helio-favicon-32x32.png" rel="shortcut icon" type="image/png">
+    <script src="/js/jquery/jquery-3.4.0.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/helio.css" rel="stylesheet">
+    
+    <!-- Template imports -->
+
+    <style>
+     
+      #myInput {
+        /*background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        /*background-position: 10px 12px; /* Position the search icon */
+        /*background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+      }
+
+      #myTable {
+        border-collapse: collapse; /* Collapse borders */
+        width: 100%; /* Full-width */
+        border: 1px solid #ddd; /* Add a grey border */
+        font-size: 18px; /* Increase font-size */
+      }
+
+      #myTable th, #myTable td {
+        text-align: left; /* Left-align text */
+        padding: 12px; /* Add padding */
+      }
+
+      #myTable tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd; 
+      }
+
+      #myTable tr.header, #myTable tr:hover {
+        /* Add a grey background color to the table header and on hover */
+        background-color: #f1f1f1;
+      }
+      </style>
+  <script type="text/javascript">
+      
+      function myFunction() {
+        // Declare variables 
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("resourceTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td0 = tr[i].getElementsByTagName("td")[0];
+          td1 = tr[i].getElementsByTagName("td")[1];
+          if (td0 && td1) {
+            txtValue0 = td0.textContent || td0.innerText;
+            txtValue1 = td1.textContent || td1.innerText;
+            var condition = txtValue0.toUpperCase().indexOf(filter) > -1 || txtValue1.toUpperCase().indexOf(filter) > -1
+            if (condition) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+
+      function hideRows(rowType) {
+        // Declare variables 
+        var table, tr, td, i, txtValue;
+        table = document.getElementById("resourceTable");
+        tr = table.getElementsByTagName("tr");
+        var modified = false;
+        var hiddenDP = document.getElementById("hidden"+rowType.toUpperCase());
+        var visibleDP = document.getElementById("visible"+rowType.toUpperCase());
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td0 = tr[i].getElementsByTagName("td")[2];
+          if (td0) {
+            txtValue0 = td0.textContent || td0.innerText;
+            var condition = txtValue0.indexOf(rowType) > -1 
+            if (condition){
+              if(tr[i].style.display == "none") {
+                tr[i].style.display = "";
+                if(!modified){
+                  hiddenDP.style.display = "none";
+                  visibleDP.style.display = "";
+                  modified = true;
+                }
+              } else {
+                tr[i].style.display = "none";
+                if(!modified){
+                  hiddenDP.style.display = "";
+                  visibleDP.style.display = "none";
+                  modified = true;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+    function downloadResource(inputUrl, format, fileName, parsingType) {
+            $.ajax({
+                url: inputUrl,
+                type: "GET",
+                headers: {
+                    "Accept": format
+                },
+                success: function (data) {
+       
+                    var parsedData;
+                    if(parsingType == 1)
+                      parsedData = data;
+                    if(parsingType == 2)
+                      parsedData = xmlToString(data);
+                    if(parsingType == 3)
+                      parsedData= JSON.stringify(data);
+
+                    var element = document.createElement('a');
+                    element.setAttribute('href', 'data:'+format+',' + encodeURIComponent(parsedData));
+                    element.setAttribute('download', fileName);
+
+                    element.style.display = 'none';
+                    document.body.appendChild(element);
+
+                    element.click();
+
+                    document.body.removeChild(element);
+                },
+                error: function (jqxhr, textStatus, errorThrown) {
+                  console.log(textStatus, errorThrown)
+                }
+            });
+        }
+        
+        function xmlToString(xmlData) { 
+
+          var xmlString;
+          //IE
+          if (window.ActiveXObject){
+              xmlString = xmlData.xml;
+          }
+          // code for Mozilla, Firefox, Opera, etc.
+          else{
+              xmlString = (new XMLSerializer()).serializeToString(xmlData);
+          }
+          return xmlString;
+      }   
+
+    
+  </script>
+  </head>
+  <body>
+    <!-- Page Header -->
+    <nav class="navbar navbar-light nav-color" style="background-color: black; border-color: black">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Helio</a>-->
+          <a class="navbar-brand" href="#">
+          <img src="/img/favicon_io/favicon-32x32.png" width="30" height="30" alt="" style="margin-top: -5px">
+        </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="/resources">Resources</a></li>-->
+            <li><a href="/sparql">SPARQL</a></li>
+            <li><a href="/dataset">Dataset</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main role="main">
+      <!-- -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12"> 
+            <ul class="breadcrumb">
+              <li  style="display:inline;"><a href="/resources">Resources </a> &#62; <a th:attr="href=${subject}" th:text="${subject}"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-md-12"> 
+            <div class="btn-group" role="group" aria-label="Visualisation buttons">
+              <button type="button" class="btn btn-primary" onclick="hideRows('dp')"><span id="visibleDP" class="glyphicon glyphicon-eye-open"></span><span id="hiddenDP" class="glyphicon glyphicon-eye-close" style="display:none"></span>&nbsp Properties ([[${dp}]])</button>
+              <button type="button" class="btn btn-primary" onclick="hideRows('op')"><span id="visibleOP" class="glyphicon glyphicon-eye-open"></span><span id="hiddenOP" class="glyphicon glyphicon-eye-close" style="display:none"></span>&nbsp Relations ([[${op}]])</button>
+              <button type="button" class="btn btn-primary" onclick="hideRows('ty')"><span id="visibleTY" class="glyphicon glyphicon-eye-open"></span><span id="hiddenTY" class="glyphicon glyphicon-eye-close" style="display:none"></span>&nbsp Types ([[${ty}]])</button>
+              <button type="button" class="btn btn-primary" onclick="hideRows('sa')"><span id="visibleSA" class="glyphicon glyphicon-eye-open"></span><span id="hiddenSA" class="glyphicon glyphicon-eye-close" style="display:none"></span>&nbsp Equivalences ([[${sa}]])</button>
+            </div>
+            <div class="btn-group" role="group">
+              <div class=".btn-sm dropdown" style="display:block-inline;float:right">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Download
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" onclick="downloadResource(window.location.pathname, 'text/turtle', 'data.ttl', 1)">TURTLE</a></li>
+                  <li><a href="#" onclick="downloadResource(window.location.pathname, 'text/ntriples', 'data.nt', 1)">N-TRIPLES</a></li>
+                  <li><a href="#" onclick="downloadResource(window.location.pathname,'application/rdf+xml', 'data.xml',2)" type="">RDF/XML</a></li>
+                  <li><a href="#" onclick="downloadResource(window.location.pathname, 'application/json', 'data.json', 3)" type="">JSON-LD</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <br/>         
+      <!-- Search filter -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter ...">
+          </div>
+        </div>
+      </div>
+      <!-- Search table --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+            <table id="resourceTable" class="table table-striped table-bordered table-sm">
+              <thead>
+                <tr>
+                  <th class="th-sm">Property</th>
+                  <th class="th-sm">Value</th>
+                  <th class="th-sm" style="display:none">Type</th>
+                </tr>
+              </thead>
+              <tbody th:each="entry : *{data}">
+                   <tr>
+                    <!-- Print predicate -->
+                    <td><a th:attr="href=${entry[0]}">[[${entry[0]}]]</a></td>
+                    <!-- Print value instanciating links -->
+                    <td th:if="${#strings.startsWith(entry[1],'http')}"><a th:attr="href=${entry[1]}">[[${entry[1]}]]</a></td>
+                    <td th:unless="${#strings.startsWith(entry[1],'http')}">[[${entry[1]}]]</td>
+                    <!-- Print attribute type -->
+                    <td style="display:none">[[${entry[2]}]]</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+	</body>
+
+</html>

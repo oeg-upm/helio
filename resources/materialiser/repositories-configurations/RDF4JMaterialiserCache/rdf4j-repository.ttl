@@ -5,7 +5,7 @@
 @prefix ms: <http://www.openrdf.org/config/sail/memory#>.
 
 [] a rep:Repository ;
-   rep:repositoryID "helio-cache" ; # this id must be the same id in the Helio configuration file $.repository.id
+   rep:repositoryID "helio-storage" ; # this id must be the same id in the Helio configuration file $.repository.id
    rep:repositoryImpl [
       rep:repositoryType "openrdf:SailRepository" ;
       sr:sailImpl [
