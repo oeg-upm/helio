@@ -30,7 +30,7 @@ For **developers** Helio can be used as a maven dependency for:
 <br/>
 
 * **Research projects**
-  - [European project BIMER](2019-2022) 
+  - [European project BIMERR](2019-2022) 
   - [European project DELTA](2019-2021) 
   - [European project VICINITY](2016-2019)
 <br/>
