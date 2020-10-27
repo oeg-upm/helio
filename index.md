@@ -30,17 +30,17 @@ For **developers** Helio can be used as a maven dependency for:
 <br/>
 
 * **Research projects**
-  - [European project BIMERR](2019-2022) 
-  - [European project DELTA](2019-2021) 
-  - [European project VICINITY](2016-2019)
+  - [European project BIMERR](https://bimerr.eu/) 2019-2021 
+  - [European project DELTA](https://www.delta-h2020.eu/) 2019-2021
+  - [European project VICINITY](https://www.vicinity2020.eu/vicinity/) 2016-2019
 <br/>
 
 * **Research articles using Helio**
-  - Cimmino, A., et al. Semantic Interoperability for DR Schemes Employing the SGAM Framework. 3rd International Conference on Smart Energy Systems and Technologies (SEST). 2020
-  - Cano-Benito, J., Cimmino, A., & García-Castro, R. Benchmarking the efficiency of RDF-based access for blockchain environments. International Conference on Software Engineering and Knowledge Engineering (SEKE). 2020
-  - Cimmino, A., Fernández-Izquierdo, A., & García-Castro, R. Astrea: Automatic Generation of SHACL Shapes from Ontologies. In European Semantic Web Conference (ESWC), Springer. 2020.
-  - Cimmino, A., Poveda-Villalón, M., & García-Castro, R. eWoT: A Semantic Interoperability Approach for Heterogeneous IoT Ecosystems Based on the Web of Things. Sensors. 2020.
-  - Cimmino, A., et al. Vicinity: Iot semantic interoperability based on the web of things. In 2019 15th International Conference on Distributed Computing in Sensor Systems (DCOSS), IEEE. 2019
+  - Cimmino, A., et al. [Semantic Interoperability for DR Schemes Employing the SGAM Framework](https://ieeexplore.ieee.org/abstract/document/9203338). 3rd International Conference on Smart Energy Systems and Technologies (SEST). 2020
+  - Cano-Benito, J., Cimmino, A., & García-Castro, R. [Benchmarking the efficiency of RDF-based access for blockchain environments](https://www.delta-h2020.eu/wp-content/uploads/2020/08/SEKE_2020.pdf). International Conference on Software Engineering and Knowledge Engineering (SEKE). 2020
+  - Cimmino, A., Fernández-Izquierdo, A., & García-Castro, R. [Astrea: Automatic Generation of SHACL Shapes from Ontologies](https://link.springer.com/chapter/10.1007%2F978-3-030-49461-2_29). In European Semantic Web Conference (ESWC), Springer. 2020.
+  - Cimmino, A., Poveda-Villalón, M., & García-Castro, R. [eWoT: A Semantic Interoperability Approach for Heterogeneous IoT Ecosystems Based on the Web of Things](https://www.mdpi.com/1424-8220/20/3/822). Sensors. 2020.
+  - Cimmino, A., et al. [Vicinity: Iot semantic interoperability based on the web of things](https://ieeexplore.ieee.org/abstract/document/8804825). In 2019 15th International Conference on Distributed Computing in Sensor Systems (DCOSS), IEEE. 2019
 <br/>
 
 * **Bachelor proposals using Helio**
