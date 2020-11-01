@@ -50,7 +50,7 @@ For **developers** Helio can be used as a maven dependency for:
 <br/>
 
 * **Tutorials**
-  - 2020 [Knowledge Graph Construction using Declarative Mapping Rules](https://iswc2020.semanticweb.org/program/tutorials/) at International Semantic Web Conference. 
+  - 2020 [Knowledge Graph Construction using Declarative Mapping Rules](https://iswc2020.semanticweb.org/program/tutorials/) at International Semantic Web Conference. ([resources](https://github.com/oeg-upm/kgc-tutorial-iswc2020)) 
   - 2019 [Knowledge Graph Construction using Declarative Mapping Rules](https://2019.eswc-conferences.org/tutorials-workshops/) at Extended Semantic Web Conference. 
 <br/>
   
