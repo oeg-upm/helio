@@ -30,6 +30,7 @@ For **developers** Helio can be used as a maven dependency for:
 <br/>
 
 * **Research projects**
+  - [Spanish National project Datos 4.0: Retos y Soluciones](http://www.upm.es/observatorio/vi/index.jsp?pageac=actividad.jsp&id_actividad=247018) 2016-2021 
   - [European project BIMERR](https://bimerr.eu/) 2019-2021 
   - [European project DELTA](https://www.delta-h2020.eu/) 2019-2021
   - [European project VICINITY](https://www.vicinity2020.eu/vicinity/) 2016-2019
@@ -44,6 +45,7 @@ For **developers** Helio can be used as a maven dependency for:
 <br/>
 
 * **Bachelor proposals using Helio**
+  - Natal-Rodríguez, Daniel. [Espacios de trabajo inteligentes en la lucha contra la Covid-19](http://oa.upm.es/66302/), 2021
   - Gómez-Vélez, Lorenzo. [Sensoring Work Spaces relying on the Web of Things paradigm](http://oa.upm.es/58136/), 2020. 
   - Cano-Benito, Juan. [Smart Semantic Office using blockchain technology](http://oa.upm.es/55994/), 2019. 
   - Naharros-Molinero, Almudena. [Analysis of factors involved in the rabies virus host hop](http://oa.upm.es/57068/). 2019. 
