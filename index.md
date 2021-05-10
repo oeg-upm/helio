@@ -27,6 +27,7 @@ For **developers** Helio can be used as a maven dependency for:
 
 * **Data Portals**
   - [Astrea](https://astrea.linkeddata.es/) with its [Helio service](https://astrea.helio.linkeddata.es/)
+  - The tests from the [Themis](http://themis.linkeddata.es/catalogue.html) catalogue
 <br/>
 
 * **Research projects**
