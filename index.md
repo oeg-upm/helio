@@ -13,7 +13,7 @@ For **users** Helio generates synchronously or asynchronously Knowledge Graphs f
 * Link resources using linking rules
 * Use different mapping languages to generate RDF and links among its resources
 * Use an external triple store as Helio database
-* Publish the RDF as a Linked Data Service (prividing access to resources, a SPARQL endpoint, and the whole dataset)
+* Publish the RDF as a Linked Data Service (providing access to resources, a SPARQL endpoint, and the whole dataset)
 * Customise the HTML views of the Linked Data Service
 * Create views dynamically combining data of different RDF resources
 * Provide an integrated view of different distributed Helios or SPARQL endpoints
