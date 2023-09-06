@@ -1,7 +1,7 @@
 ---
-title: Helio
+title: Helio (Legacy)
 ---
-
+## NEW Helio can be found at [Helio Ecosystem](https://github.com/helio-ecosystem)
 ## Helio is a framework that allows generating and publishing RDF data from different heterogeneous sources as Linked Data. 
 
 -------------
